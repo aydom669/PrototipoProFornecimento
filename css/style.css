@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+* {
+  font-family: "Poppins" sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+section {
+  padding: 5rem 3%;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+html::-webkit-scrollbar-thumb {
+  background: #10221b;
+}
+
+/* Header
+======================================*/
+
+.header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  background: #2196f3; /* Azul chamativo */
+  color: #000; /* Preto */
+  font-family: "Montserrat", sans-serif;
+}
+.header .header__logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff; /* Texto branco */
+  margin-right: auto;
+}
+.header .header__logo i {
+  color: #000;
+}
+.header .nav #nav-close {
+  font-size: 5rem;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
+.header .nav a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1.5rem;
+}
+.header .nav a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  margin-right: 1.2rem;
+  color: #fff;
+}
+.header .icons a:hover,
+.header .icons div:hover {
+  color: #000;
+  transition: 0.5s;
+}
+.header #menu-btn {
+  display: none;
+}
+.header.active {
+  background: #000; /* Preto */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Main 
+======================================*/
+
+main .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+main .presentation p {
+  margin-top: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+main .presentation {
+  background-color: #1e88e5; /* Azul chamativo */
+  color: #fff; /* Texto branco */
+  padding: 100px 0;
+  font-size: 24px; /* Tamanho do texto */
+}
+
+/* Estilos para a seção de categorias */
+.categoriaVantages {
+  background-color: #f9f9f9; /* Fundo cinza claro */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: #1e88e5; /* Azul chamativo */
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.categoria__conteiner {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.categoria__box {
+  background-color: #fff; /* Fundo branco para os cartões */
+  border: 1px solid #ddd; /* Borda cinza para os cartões */
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.categoria__box:hover {
+  transform: translateY(-10px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.categoria__box img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.categoria__box h3 {
+  font-size: 2rem;
+  color: #1e88e5; /* Azul chamativo */
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 10px;
+}
+
+.categoria__box p {
+  font-size: 1.3rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  padding: 2rem 0;
+}
+
+/* Estilos para a seção "Sobre" */
+
+.sobre {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1e88e5; /* Azul chamativo para o fundo */
+  color: #fff; /* Texto branco */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.sobre img {
+  max-width: 100%;
+  border-radius: 50%; /* Transforma a imagem em um círculo */
+  margin-bottom: 30px;
+}
+
+.sobre .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sobre p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* categorias Fornecedores */
+/* Adicione estilos para o carrossel e os cartões conforme necessário */
+
+/* Estilos do cartão */
+.card {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff; /* Fundo branco para os cartões */
+  border: 1px solid #ddd; /* Borda cinza para os cartões */
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card .text {
+  font-size: 1.3rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  padding: 2rem 0;
+}
+
+/* ... Outros estilos conforme necessário ... */
+
+/* comentarios */
+
+main .comentarios .slide .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  position: relative;
+  background: #1e88e5; /* Azul */
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  color: #fff; /* Texto branco */
+  line-height: 2;
+  z-index: 0;
+  padding: 3rem;
+}
+
+main .comentarios .slide .text:before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: #1e88e5; /* Azul */
+  bottom: -1.2rem;
+  transform: rotate(45deg);
+  left: 0.7rem;
+}
+
+main .comentarios .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .comentarios .slide .user figure img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50px;
+}
+
+main .comentarios .slide .user .info h3 {
+  font-size: 2rem;
+  color: #1e88e5; /* Azul */
+  margin-bottom: 2px;
+}
+
+main .comentarios .slide .user .info span {
+  color: #2196f3; /* Azul mais claro */
+  font-size: 1.5rem;
+}
+
+/* Footer
+============================================ */
+.footer {
+  width: 100%;
+  height: 100%;
+  background: #1e88e5;
+}
+.footer .conteiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .conteiner .box {
+  padding: 3rem 2rem;
+}
+.footer .conteiner .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+.footer .conteiner .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .conteiner .box a i {
+  padding-right: 0.5rem;
+}
+
+.footer .conteiner .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .creditos {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+.footer .creditos span {
+  color: #219150;
+}
+
+/* Footer / End
+============================================ */
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 971px) {
+  .header .nav a {
+    font-size: 1.5rem;
+  }
+  .header .icons a,
+  .header .icons div {
+    font-size: 2.2rem;
+  }
+
+  .home .box {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    background-position: right !important;
+  }
+  .home .box.second {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    background-position: left !important;
+  }
+  .home .box .content span {
+    font-size: 3rem;
+  }
+  .home .box .content h3 {
+    font-size: 4rem;
+  }
+  .home .box .content p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 707px) {
+  .header .nav {
+    width: 35rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    left: -110%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    background: #2196f3;
+  }
+  .header .nav.active {
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 0px 100vw;
+    left: 0px;
+  }
+  .header .nav a {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fafafa;
+  }
+  .header .nav #nav-close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+  }
+  .header #menu-btn {
+    display: inline-block;
+    color: #ffffff;
+  }
+
+  main .container {
+    font-size: 1.6rem;
+  }
+
+  main .presentation {
+    padding: 80px 0;
+    font-size: 20px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
